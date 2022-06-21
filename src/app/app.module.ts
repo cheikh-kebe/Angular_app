@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { EventService } from 'src/shared/event.service';
 
 import { EventsAppComponent } from './events-app.component';
 import { EventsThumbnailComponent } from './events/events_thumbnail.component';
@@ -19,7 +20,7 @@ import { NavbarComponent } from './nav/navbar.component';
     BrowserModule,
    
   ],
-  providers: [],
+  providers: [EventService],
   bootstrap: [EventsAppComponent]
 })
 export class AppModule { }
