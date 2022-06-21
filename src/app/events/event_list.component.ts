@@ -15,9 +15,15 @@ import { EventService } from 'src/shared/event.service';
   `,
 })
 export class EventsListComponent {
-  events: any[];
-  
+  //initialize events 
+  events: any = [];
+  //add constructor to the class calling private service from shared folder "eventService"
   constructor( private eventServices : EventService) {
-    this.events = eventServices.getEvent()
+
+  }
+  //ngOnInit function based on the component life cycle that will bind to events and retrieve from event.service.ts getEvent() function
+  ngOnInit(){
+    this.events = this.eventServices.getEvent()
+  
   }
 }
