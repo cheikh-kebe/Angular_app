@@ -7,7 +7,7 @@ export class EventService {
   }
 
 }
-const EVENTS =  [
+const EVENTS = [
 {
   id: 1,
     name: 'Angular Connect',
