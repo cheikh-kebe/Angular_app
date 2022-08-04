@@ -1,17 +1,26 @@
 import { Component } from '@angular/core';
+import { EventService } from 'src/app/events/shared/event.service';
 
 @Component({
-  templateUrl: "./event-details.components.html",
+  templateUrl: "./event-details.component.html",
   styles: [`
-    .container{padding-left:20px; padding-right: 20px;}
-    .event-image{ height: 100px;}
+    .container{
+      padding-left:20px; 
+      padding-right: 20px;
+    }
+    .event-image{ 
+      height: 100px;
+    }
     `
   ]
 })
 
 export class EventDetailsComponent {
-  
-  ngOnInit(){
+  event:any
+  constructor(private eventService: EventService){
 
+  }
+  ngOnInit(){
+    this.event = this.eventService.getEvent(1)
   }
 }

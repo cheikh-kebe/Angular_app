@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { EventService } from 'src/app/events/shared/event.service';
+import { EventService } from '../shared/event.service';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
-  selector: 'events-list',
   template: `
     <div class="well hoverwell thumbnail">
       <h1>Upcoming Angular Events</h1>
@@ -20,12 +19,12 @@ export class EventsListComponent {
   events: any = [];
   //add constructor to the class calling private service from shared folder "eventService"
   constructor(
-    private eventServices: EventService,
+    private eventsService: EventService,
     private toastr: ToastrService
   ) { }
   //ngOnInit function based on the component life cycle that will bind to events and retrieve from event.service.ts getEvent() function
   ngOnInit() {
-    this.events = this.eventServices.getEvent();
+    this.events = this.eventsService.getEvents();
   }
 
   handleThumbnailClick(eventName: any) {
