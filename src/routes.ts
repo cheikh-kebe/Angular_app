@@ -6,6 +6,6 @@ import { Routes } from "@angular/router";
 
 export const appRoutes:Routes = [
   {path: 'events', component: EventsListComponent},
-  {path: 'event/:id', component: EventDetailsComponent},
+  {path: 'events/:id', component: EventDetailsComponent},
   {path: '', redirectTo: '/events', pathMatch: 'full'}
 ]
