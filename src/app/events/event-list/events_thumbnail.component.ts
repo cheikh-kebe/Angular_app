@@ -3,7 +3,7 @@ import { Component, Input } from '@angular/core';
 @Component({
   selector: 'event-thumbnail',
   template: `
-    <div class="well hoverwell thumbnail">
+    <div [routerLink]="['/events', event.id]" class="well hoverwell thumbnail"><!--routerLink able to set the url path-->
       <h2>{{ event?.name }}</h2> <!-- interpolation {{data.name}} is use to display data-->
       <div>Date: {{ event?.date }}</div>
       <div>Time: {{ event?.time }}</div>
