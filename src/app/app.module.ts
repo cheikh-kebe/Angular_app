@@ -14,6 +14,7 @@ import { appRoutes } from "../routes";
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Error404component } from './error/404.component';
+import { EventRouteActivator } from './events/event-details/event-route-activator.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { Error404component } from './error/404.component';
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule added
   ],
-  providers: [EventService],
+  providers: [EventService, EventRouteActivator],
   bootstrap: [EventsAppComponent]
 })
 export class AppModule { }
