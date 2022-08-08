@@ -13,6 +13,7 @@ import { appRoutes } from "../routes";
 //Toaster
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CreateEventComponent } from './events/new-event/create-event.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     EventsListComponent,
     EventsThumbnailComponent,
     EventDetailsComponent,
+    CreateEventComponent,
     NavbarComponent,
     
 
