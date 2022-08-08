@@ -13,6 +13,7 @@ import { appRoutes } from "../routes";
 //Toaster
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Error404component } from './error/404.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     EventsThumbnailComponent,
     EventDetailsComponent,
     NavbarComponent,
+    Error404component
     
 
   ],
