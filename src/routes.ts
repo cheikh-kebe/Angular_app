@@ -1,5 +1,3 @@
-//routes
-import { Routes } from "@angular/router";
 //components
 import { EventsListComponent } from "./app/events/event-list/event_list.component";
 import { EventDetailsComponent } from "./app/events/event-details/event-details.component";
