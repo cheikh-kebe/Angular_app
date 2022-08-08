@@ -15,6 +15,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Error404component } from './error/404.component';
 import { EventRouteActivator } from './events/event-details/event-route-activator.service';
+import { CreateEventComponent } from './events/new-event/create-event.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { EventRouteActivator } from './events/event-details/event-route-activato
     EventsListComponent,
     EventsThumbnailComponent,
     EventDetailsComponent,
+    CreateEventComponent,
     NavbarComponent,
     Error404component
     
